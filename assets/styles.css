@@ -1,0 +1,315 @@
+/* style.css - Wikipedia Tribute Page Example
+/* Author: J. Bridges Design - https://www.jbridgesdesign.com
+/* Last Updated: March 28, 2026
+
+/* 1. Reset Styles */
+/* 2. Global Styles */
+/* 3. Layout */
+/* 4. Navigation */
+/* 5. Content Sections */
+/* 6. Footer */
+/* 7. Media Queries */
+
+/* 1. Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Global Styles */
+body {
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    color: #202122;
+}
+
+a {
+    text-decoration: none;
+    color: #3366cc;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #6b4ba1;
+}
+
+h1, h2 {
+    font-weight: normal;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+p, ul, ol {
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 1.8em;
+    line-height: 1.375;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 1em 0 0.25em 0;
+}
+
+p {
+    margin: 0.5em 0 0.8em 0;
+}
+
+ul, ol {
+    margin: 0 0 1em 2em;
+}
+
+figure {
+    float: right;
+    clear: right;
+    margin: 0 0 1em 1.5em;
+    border: 1px solid #a2a9b1;
+    padding: 3px;
+    background: #f8f9fa;
+    font-size: 0.875em;
+}
+figure img {
+    display: block;
+}
+figure figcaption {
+    text-align: center;
+    padding: 4px 3px;
+    font-style: italic;
+    color: #54595d;
+    background-color: #f8f9fa;
+    max-width: 400px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+input[type="search"] {
+    padding: 4px 8px;
+    border: 1px solid #72777d;
+    font-size: 0.875em;
+    color: #202122;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin: -1px -1px -1px -5px;
+    background-color: #f8f9fe;
+    display: inline-block;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 24px;
+    max-width: 28rem;
+    border: 1px solid #72777d;
+    border-radius: 2px;
+    padding: 0 11px 0 11px;
+    font-weight: 700;
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: 0.1s;
+}
+
+/* 3. Layout */
+body > header,
+body > main,
+body > footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #fff;
+    padding: 1em 2em 2em 2em;
+    border: 1px solid #a2a9b1;
+    border-top: none;
+}
+
+section {
+    margin-bottom: 1.5em;
+    overflow: hidden;
+}
+section p {
+    text-align: left;
+}
+
+/* 4. Navigation */
+header > nav {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #a2a9b1;
+    text-align: right;
+    padding: 4px 0;
+}
+header > nav ul {
+    margin: 0;
+    padding: 0 0.5em;
+    list-style: none;
+}
+header > nav li {
+    display: inline;
+    padding-left: 10px;
+    font-size: 0.85em;
+}
+header > nav a {
+    color: #3366cc;
+}
+
+/* 5. Content Sections */
+
+/* 5.1 Article Tab Nav (Inside Main) */
+main > nav {
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 1em;
+    margin-left: -2em;
+    margin-right: -2em;
+    padding: 0 2em;
+    background-color: #fff;
+}
+main > nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+main > nav li {
+    display: inline-block;
+    margin-right: 2px;
+}
+main > nav a {
+    display: inline-block;
+    color: #3366cc;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    font-size: 0.875em;
+    background-color: #f8f9fa;
+    border-color: #a2a9b1;
+    border-bottom: none;
+    margin-bottom: -1px;
+}
+main > nav a:hover {
+    background-color: #fff;
+    text-decoration: none;
+}
+main > nav li:first-child a {
+    background-color: #fff;
+    border-color: #a2a9b1;
+    color: #202122;
+}
+
+/* 5.2 Content Sections Header (Article Title Area) */
+header {
+    background-color: #fff;
+    border: 1px solid #a2a9b1;
+    border-bottom: none;
+    padding: 0.5em 2em 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75em;
+}
+header img {
+    height: 90px;
+    width: auto;
+}
+header span {
+    flex: 1;
+    min-width: 150px;
+}
+header > nav {
+    margin-left: auto;
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+header h1 {
+    flex-basis: 100%;
+    border-bottom: none;
+    padding: 0.25em 0 0.5em 0;
+    margin: 0;
+}
+
+/* 6. Footer */
+footer {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    border-top: none;
+    padding: 1em 2em;
+    font-size: 0.8em;
+    color: #54595d;
+    text-align: center;
+}
+footer p {
+    margin: 0.25em auto;
+    max-width: 700px;
+    font-size: 1em;
+    padding: 0;
+}
+footer a {
+    color: #3366cc;
+}
+footer a:visited {
+    color: #6b4ba1;
+}
+footer > nav {
+    margin-top: 0.5em;
+    border: none;
+    padding: 0;
+    background: transparent;
+    text-align: center;
+}
+footer > nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer > nav li {
+    display: inline;
+    padding: 0 6px;
+    border-right: 1px solid #a2a9b1;
+    line-height: 1.8;
+}
+footer > nav li:last-child {
+    border-right: none;
+}
+
+/* 7. Media Queries */
+@media (max-width: 700px) {
+    body > header,
+    body > main,
+    body > footer {
+        max-width: 100%;
+    }
+    main {
+        padding: 0.75em 1em 1.5em 1em;
+    }
+    header {
+        padding: 0.5em 1em 0 1em;
+    }
+    figure {
+        float: none;
+        margin: 0 auto 1em auto;
+    }
+    figure figcaption {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 0.5em 0.75em 1em 0.75em;
+    }
+    figure figcaption {
+        max-width: 250px;
+    }
+    footer > nav li {
+        display: block;
+        border-right: none;
+        border-bottom: 1px solid #a2a9b1;
+        padding: 4px 0;
+    }
+}
